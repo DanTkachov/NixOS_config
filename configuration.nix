@@ -68,11 +68,11 @@
 #  	cinnamon.enable = true;
 #  };
 
-# Enable Deepin DE
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager = {
-  	deepin.enable = true;
-  };
+## Enable Deepin DE
+#  services.xserver.displayManager.sddm.enable = true;
+#  services.xserver.desktopManager = {
+#  	deepin.enable = true;
+#  };
 
   # Configure keymap in X11
   services.xserver = {
