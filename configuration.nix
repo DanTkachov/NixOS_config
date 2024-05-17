@@ -127,11 +127,11 @@
 
 
 # Addons for programs
-  (jetbrains.idea-community.override{
-    plugins = with jetbrains.idea-community.plugins; [
-      nix
-    ];
-  })
+#   (jetbrains.idea-community.override{
+#     plugins = with jetbrains.idea-community.plugins; [
+#       nix
+#     ];
+#   })
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
