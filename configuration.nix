@@ -120,8 +120,10 @@
   # Main programs
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-	jetbrains.idea-community
-	firefox
+  jetbrains.idea-community
+  firefox
+  git
+
 
 
 # Addons for programs
