@@ -47,10 +47,14 @@
   services.xserver.enable = true;
 
 ### Enable GNOME DE
-#  services.xserver.displayManager.sddm.enable = true;
-#  services.xserver.desktopManager = {
-#  	gnome.enable = true;
-#  };
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.gnome = {
+  	enable = true;
+  	  extraGSettingsOverrides = ''
+        [org.gnome.desktop.interface]
+        color-scheme='prefer-light'
+      '';
+  };
 
 # Enable Pantheon DE
 #  services.xserver.displayManager.lightdm.enable = true;
