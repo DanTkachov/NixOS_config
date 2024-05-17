@@ -125,6 +125,7 @@
   git
   alacritty
   fzf
+  jupyter-all
 
 
 
