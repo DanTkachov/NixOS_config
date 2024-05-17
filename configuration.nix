@@ -50,10 +50,15 @@
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.gnome = {
   	enable = true;
-  	  extraGSettingsOverrides = ''
-        [org.gnome.desktop.interface]
-        color-scheme='prefer-light'
-      '';
+    extraGSettingsOverridePackages = [
+        (pkgs.writeTextFile {
+          name = "gnome-settings";
+          destination = "/org/gnome/desktop/interface/color-scheme";
+          text = ''
+            prefer-light
+          '';
+        })
+      ];
   };
 
 # Enable Pantheon DE
@@ -127,6 +132,8 @@
   jetbrains.idea-community
   firefox
   git
+  alacritty
+  fzf
 
 
 
