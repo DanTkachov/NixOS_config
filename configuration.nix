@@ -47,10 +47,10 @@
   services.xserver.enable = true;
 
 ### Enable GNOME DE
-#  services.xserver.displayManager.sddm.enable = true;
-#  services.xserver.desktopManager.gnome = {
-#  	enable = true;
-#  };
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.gnome = {
+  	enable = true;
+  };
 
 # Enable Pantheon DE
 #  services.xserver.displayManager.lightdm.enable = true;
@@ -65,10 +65,10 @@
 #  };
 
 # Enable Deepin DE
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager = {
-  	deepin.enable = true;
-  };
+#  services.xserver.displayManager.sddm.enable = true;
+#  services.xserver.desktopManager = {
+#  	deepin.enable = true;
+#  };
 
   # Configure keymap in X11
   services.xserver = {
