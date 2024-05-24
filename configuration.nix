@@ -126,6 +126,7 @@
   alacritty
   fzf
   jupyter-all
+  floorp
 
 
 
